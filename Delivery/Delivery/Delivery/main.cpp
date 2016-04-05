@@ -18,12 +18,41 @@ using namespace std;
 int main()
 {
 
-    vector < Delivery *> delivery;
+    vector < Delivery *> deliveryVector;
     
+    int pedidos = 0;
     int menuOpcao;
     
     cout << "   DELIVERY MANIA          \n       MENU       \n\n[1] Pizzaria\n[2] Sushi Bar\n[3] Servico de Buffet\nEscolha: ";
     cin >> menuOpcao;
-    
+        switch(menuOpcao)
+        {
+            case 1:
+                deliveryVector.push_back(new Pizzaria());
+                pedidos++;
+                break;
+            case 2:
+                deliveryVector.push_back(new Sushi());
+                pedidos++;
+                break;
+            case 3:
+                deliveryVector.push_back(new Buffet());
+                break;
+        }
+        
+        for(int i=0;i<deliveryVector.size();i++)
+        {
+            Pizzaria *ponteiroPizza = dynamic_cast < Pizzaria *> (deliveryVector[i]);
+            if(ponteiroPizza != 0){
+                //ponteiroPizza -> menu();
+            }else if{
+                Sushi * ponteiroSushi = dynamic_cast < Sushi *> (deliveryVector[i]);
+                //ponteiroSushi -> menu();
+            }else if{
+                Buffet * ponteiroBuffet = dynamic_cast < Buffet *> (deliveryVector[i]);
+                //ponteiroBuffet ->
+            }
+        }
+        
 	return 0;
 }
