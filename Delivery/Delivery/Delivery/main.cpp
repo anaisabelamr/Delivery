@@ -43,15 +43,17 @@ int main()
         for(int i=0;i<deliveryVector.size();i++)
         {
             Pizzaria *ponteiroPizza = dynamic_cast < Pizzaria *> (deliveryVector[i]);
-            if(ponteiroPizza != 0){
-                //ponteiroPizza -> menu();
-            }else if{
-                Sushi * ponteiroSushi = dynamic_cast < Sushi *> (deliveryVector[i]);
-                //ponteiroSushi -> menu();
-            }else if{
-                Buffet * ponteiroBuffet = dynamic_cast < Buffet *> (deliveryVector[i]);
-                //ponteiroBuffet ->
-            }
+                if(ponteiroPizza != 0){
+                    //ponteiroPizza -> menu();
+                }
+            Sushi * ponteiroSushi = dynamic_cast < Sushi *> (deliveryVector[i]);
+                if (ponteiroSushi != 0){                
+                    //ponteiroSushi -> menu();
+                }
+            Buffet * ponteiroBuffet = dynamic_cast < Buffet *> (deliveryVector[i]);
+                if (ponteiroBuffet != 0){
+                    //ponteiroBuffet ->
+                }
         }
         
 	return 0;
