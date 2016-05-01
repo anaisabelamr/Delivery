@@ -6,6 +6,7 @@
 #include <string.h>
 #include <iostream>
 
+
 using namespace std;
 using std::string;
 using std::ostream;
@@ -23,8 +24,13 @@ public:
 	Delivery();
 	Delivery(Delivery &);
 	~Delivery();
+	void menuDeServicos();
+	void tipoEntrega();
+	int gerarNumeroPedido();
 
 protected:
+	double precoFinal;
+	double precoFinalDesconto;
 
 
 

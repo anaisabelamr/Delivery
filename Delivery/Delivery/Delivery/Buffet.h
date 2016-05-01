@@ -23,6 +23,7 @@ public:
 	Buffet();
 	Buffet(Buffet &);
 	~Buffet();
+	void menuBuffet();
 	
 protected:
 

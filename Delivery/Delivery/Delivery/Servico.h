@@ -20,10 +20,8 @@ public:
 	Servico();
 	Servico(Servico &);
 	~Servico();
-	menuDeServicos();
-
-protected:
-	
+	virtual void menuDeServicos() = 0;
+	virtual void tipoEntrega() = 0;
 
 };
 

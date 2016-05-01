@@ -21,6 +21,7 @@ public:
 	Sushi();
 	Sushi(Sushi &);
 	~Sushi();
+	void menuSushi();
 	
 protected:
 

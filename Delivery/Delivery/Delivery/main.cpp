@@ -17,7 +17,11 @@ using namespace std;
 
 int main()
 {
-
+	Delivery d;
+	d.menuDeServicos();
+	Buffet b;
+	//b.menuBuffet();
+/*
     vector < Delivery *> deliveryVector;
     
     int pedidos = 0;
@@ -55,6 +59,6 @@ int main()
                     //ponteiroBuffet ->
                 }
         }
-        
+*/        
 	return 0;
 }

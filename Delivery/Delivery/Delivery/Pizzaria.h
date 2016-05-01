@@ -22,8 +22,14 @@ public:
 	Pizzaria();
 	Pizzaria(Pizzaria &);
 	~Pizzaria();
+	void menuPizzaria();
 
 protected:
+	const static double precoPizzaPortuguesa;
+	const static double precoPizzaCalabresa;
+	const static double precoPizzaBacon;
+	const static double precoPizzaQuatroQueijos;
+	const static double precoPizzaMarguerita;
 
 };
 

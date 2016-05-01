@@ -27,3 +27,10 @@ const Sushi & Sushi::operator =(const Sushi &sushi)
     hp = atributo.hp;
     sp = atributo.sp;*/
 }
+
+void Sushi::menuSushi()
+{
+	int opcao = 0;
+	cout << " ~ ~ ~ ~ ~ TAKASHI SUSHI BAR ~ ~ ~ ~ ~\n\nQual prato voce deseja?\n1- Temaki\n2- Portuguesa\n3- Quatro queijos\n4- Calabresa\n5- Marguerit\n";
+	cin >> opcao;
+}
