@@ -19,21 +19,18 @@ class Delivery : public Servico
 public:
 
     const Delivery &operator=(const Delivery &);
-    bool operator==(const Delivery &) const;
-
+	const Delivery &operator+(const Delivery &);
+	
 	Delivery();
 	Delivery(Delivery &);
 	~Delivery();
 	void menuDeServicos();
 	void tipoEntrega();
 	int gerarNumeroPedido();
+	double getPrecoFinal();
 
 protected:
 	double precoFinal;
-	double precoFinalDesconto;
-
-
-
 };
 
 #endif // DELIVERY_H

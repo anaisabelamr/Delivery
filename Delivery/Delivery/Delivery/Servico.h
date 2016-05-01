@@ -15,8 +15,7 @@ class Servico {
 public:
 
     const Servico &operator=(const Servico &);
-    bool operator==(const Servico &) const;
-
+	
 	Servico();
 	Servico(Servico &);
 	~Servico();

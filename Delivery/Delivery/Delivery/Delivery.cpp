@@ -9,22 +9,30 @@ Delivery::Delivery()
 {
 }
 
+Delivery::Delivery(Delivery &delivery)
+:Servico(static_cast <Servico> (delivery))
+{
+	
+}
+
 Delivery::~Delivery()
 {
 }
 
 ostream &operator<<(ostream &output, Delivery &delivery)
 {
-	output  << "bla bla bla";
+	output  << "Preco Final = R$" << delivery.getPrecoFinal() << "\n\n";
+	return output;
 }
 
-bool Delivery::operator ==(const Delivery &delivery) const
+const Delivery & Delivery::operator +(const Delivery &delivery)
 {
-/*    if(comparaArqueiro.nome != nome) return false;
-    if(comparaArqueiro.hp != hp) return false;
-    if(comparaArqueiro.sp != sp) return false;
-    return true;*/
+       Delivery temp;
+	   temp.precoFinal = delivery.precoFinal + precoFinal;
+       return temp;
 }
+
+
 
 const Delivery & Delivery::operator =(const Delivery &delivery)
 {
@@ -33,6 +41,10 @@ const Delivery & Delivery::operator =(const Delivery &delivery)
     sp = atributo.sp;*/
 }
 
+double Delivery::getPrecoFinal()
+{
+	return precoFinal;
+}
 
 void Delivery::menuDeServicos()
 {

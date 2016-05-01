@@ -4,6 +4,12 @@ Pizzaria::Pizzaria()
 {
 }
 
+Pizzaria::Pizzaria(Pizzaria &pizzaria)
+:Delivery(static_cast <Delivery> (pizzaria))
+{
+	
+}
+
 Pizzaria::~Pizzaria()
 {
 }

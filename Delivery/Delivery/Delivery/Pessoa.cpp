@@ -2,6 +2,7 @@
 
 Pessoa::Pessoa()
 {
+	this.nome = "Ana Isabela Ramos";
 }
 
 Pessoa::~Pessoa()
@@ -10,20 +11,11 @@ Pessoa::~Pessoa()
 
 ostream &operator<<(ostream &output, Pessoa &pessoa)
 {
-	output  << "bla bla bla";
-}
-
-bool Pessoa::operator ==(const Pessoa &pessoa) const
-{
-/*    if(comparaArqueiro.nome != nome) return false;
-    if(comparaArqueiro.hp != hp) return false;
-    if(comparaArqueiro.sp != sp) return false;
-    return true;*/
+	output  << "Nome do Cleinte: " << pessoa.nome;
 }
 
 const Pessoa & Pessoa::operator =(const Pessoa &pessoa)
 {
-/*    nome = atributo.nome;
-    hp = atributo.hp;
-    sp = atributo.sp;*/
+    nome = pessoa.nome;
 }
+

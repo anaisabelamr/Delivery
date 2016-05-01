@@ -4,6 +4,12 @@ Buffet::Buffet()
 {
 }
 
+Buffet::Buffet(Buffet &buffet)
+:Delivery(static_cast <Delivery> (buffet))
+{
+	
+}
+
 Buffet::~Buffet()
 {
 }

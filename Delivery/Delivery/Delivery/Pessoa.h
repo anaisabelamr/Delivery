@@ -25,6 +25,7 @@ public:
 	~Pessoa();
 	
 protected:
+	string nome;
 
 };
 

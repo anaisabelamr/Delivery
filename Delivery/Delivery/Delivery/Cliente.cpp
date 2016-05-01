@@ -4,6 +4,12 @@ Cliente::Cliente()
 {
 }
 
+Cliente::Cliente(Cliente &cliente)
+:Pessoa(static_cast <Pessoa> (cliente))
+{
+	
+}
+
 Cliente::~Cliente()
 {
 }
