@@ -5,7 +5,7 @@ Pizzaria::Pizzaria()
 }
 
 Pizzaria::Pizzaria(Pizzaria &pizzaria)
-:Delivery(static_cast <Delivery> (pizzaria))
+:Delivery(pizzaria)
 {
 	
 }
@@ -16,7 +16,8 @@ Pizzaria::~Pizzaria()
 
 ostream &operator<<(ostream &output, Pizzaria &pizzaria)
 {
-	output  << "bla bla bla";
+//	output << static_cast<Delivery>(pizzaria);
+	output << "Pizza Bacon: R$" << pizzaria.precoPizzaBacon << "\nPizza Portuguesa: R$" << pizzaria.precoPizzaPortuguesa "\nPizza Quatro Queijos: R$" << pizzaria.precoPizzaQuatroQueijos << "\nPizza Calabresa: R$" << pizzaria.precoPizzaCalabresa << "\nPizza Marguerita: R$" << pizzaria.precoPizzaMarguerita "\n\n";ss
 }
 
 bool Pizzaria::operator ==(const Pizzaria &pizzaria) const

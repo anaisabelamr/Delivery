@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=ANA ISABELA
-Date                   :=01/05/2016
+Date                   :=02/05/2016
 CodeLitePath           :="C:\Program Files (x86)\CodeLite"
 LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files (x86)\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Servico.cpp$(ObjectSuffix) $(IntermediateDirectory)/Delivery.cpp$(ObjectSuffix) $(IntermediateDirectory)/Pizzaria.cpp$(ObjectSuffix) $(IntermediateDirectory)/Sushi.cpp$(ObjectSuffix) $(IntermediateDirectory)/Buffet.cpp$(ObjectSuffix) $(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix) $(IntermediateDirectory)/Cliente.cpp$(ObjectSuffix) $(IntermediateDirectory)/Funcionario.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Servico.cpp$(ObjectSuffix) $(IntermediateDirectory)/Delivery.cpp$(ObjectSuffix) $(IntermediateDirectory)/Pizzaria.cpp$(ObjectSuffix) $(IntermediateDirectory)/Sushi.cpp$(ObjectSuffix) $(IntermediateDirectory)/Buffet.cpp$(ObjectSuffix) 
 
 
 
@@ -140,30 +140,6 @@ $(IntermediateDirectory)/Buffet.cpp$(DependSuffix): Buffet.cpp
 
 $(IntermediateDirectory)/Buffet.cpp$(PreprocessSuffix): Buffet.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Buffet.cpp$(PreprocessSuffix) "Buffet.cpp"
-
-$(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix): Pessoa.cpp $(IntermediateDirectory)/Pessoa.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/git/Delivery/Delivery/Delivery/Delivery/Pessoa.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Pessoa.cpp$(DependSuffix): Pessoa.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Pessoa.cpp$(DependSuffix) -MM "Pessoa.cpp"
-
-$(IntermediateDirectory)/Pessoa.cpp$(PreprocessSuffix): Pessoa.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Pessoa.cpp$(PreprocessSuffix) "Pessoa.cpp"
-
-$(IntermediateDirectory)/Cliente.cpp$(ObjectSuffix): Cliente.cpp $(IntermediateDirectory)/Cliente.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/git/Delivery/Delivery/Delivery/Delivery/Cliente.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Cliente.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Cliente.cpp$(DependSuffix): Cliente.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Cliente.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Cliente.cpp$(DependSuffix) -MM "Cliente.cpp"
-
-$(IntermediateDirectory)/Cliente.cpp$(PreprocessSuffix): Cliente.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Cliente.cpp$(PreprocessSuffix) "Cliente.cpp"
-
-$(IntermediateDirectory)/Funcionario.cpp$(ObjectSuffix): Funcionario.cpp $(IntermediateDirectory)/Funcionario.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/git/Delivery/Delivery/Delivery/Delivery/Funcionario.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Funcionario.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Funcionario.cpp$(DependSuffix): Funcionario.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Funcionario.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Funcionario.cpp$(DependSuffix) -MM "Funcionario.cpp"
-
-$(IntermediateDirectory)/Funcionario.cpp$(PreprocessSuffix): Funcionario.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Funcionario.cpp$(PreprocessSuffix) "Funcionario.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

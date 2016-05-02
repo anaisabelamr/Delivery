@@ -4,13 +4,18 @@ Servico::Servico()
 {
 }
 
+Servico::Servico(Servico &)
+{
+	
+}
+
 Servico::~Servico()
 {
 }
 
 ostream &operator<<(ostream &output, Servico &servico)
 {
-	output  << "bla bla bla";
+	output  << "Classe Servico";
 	return output;
 }
 

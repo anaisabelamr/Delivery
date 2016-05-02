@@ -9,9 +9,6 @@
 #include "Pizzaria.h"
 #include "Sushi.h"
 #include "Buffet.h"
-#include "Pessoa.h"
-#include "Cliente.h"
-#include "Funcionario.h"
 
 using namespace std;
 

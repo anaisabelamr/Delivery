@@ -5,12 +5,13 @@
 #include <iostream>
 #include <time.h>
 
-Delivery::Delivery()
+Delivery::Delivery():Servico()
 {
+	this->precoFinal = getPrecoFinal();
 }
 
 Delivery::Delivery(Delivery &delivery)
-:Servico(static_cast <Servico> (delivery))
+:Servico(delivery)
 {
 	
 }
@@ -27,18 +28,14 @@ ostream &operator<<(ostream &output, Delivery &delivery)
 
 const Delivery & Delivery::operator +(const Delivery &delivery)
 {
-       Delivery temp;
-	   temp.precoFinal = delivery.precoFinal + precoFinal;
-       return temp;
+       Delivery preco;
+	   preco.precoFinal = delivery.precoFinal + precoFinal;
+       return preco;
 }
-
-
 
 const Delivery & Delivery::operator =(const Delivery &delivery)
 {
-/*    nome = atributo.nome;
-    hp = atributo.hp;
-    sp = atributo.sp;*/
+    precoFinal = delivery.precoFinal;
 }
 
 double Delivery::getPrecoFinal()
@@ -81,4 +78,9 @@ int Delivery::gerarNumeroPedido()
 
   numeroPedido = rand() % 1000 + 1;
   return numeroPedido;
+}
+
+void Delivery::tipoEntrega()
+{
+	
 }

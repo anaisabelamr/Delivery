@@ -102,11 +102,5 @@
     <File Name="Sushi.cpp"/>
     <File Name="Buffet.h"/>
     <File Name="Buffet.cpp"/>
-    <File Name="Pessoa.h"/>
-    <File Name="Pessoa.cpp"/>
-    <File Name="Cliente.h"/>
-    <File Name="Cliente.cpp"/>
-    <File Name="Funcionario.h"/>
-    <File Name="Funcionario.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

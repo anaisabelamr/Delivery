@@ -5,7 +5,7 @@ Sushi::Sushi()
 }
 
 Sushi::Sushi(Sushi &sushi)
-:Delivery(static_cast <Delivery> (sushi))
+:Delivery(sushi)
 {
 	
 }

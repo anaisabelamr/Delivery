@@ -1,5 +1,5 @@
 Debug/main.cpp.o: main.cpp Servico.h Delivery.h Pizzaria.h Sushi.h \
- Buffet.h Pessoa.h Cliente.h Funcionario.h
+ Buffet.h
 
 Servico.h:
 
@@ -10,9 +10,3 @@ Pizzaria.h:
 Sushi.h:
 
 Buffet.h:
-
-Pessoa.h:
-
-Cliente.h:
-
-Funcionario.h:
